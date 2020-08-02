@@ -1,7 +1,4 @@
-/*!
- *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
- *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
- */
+
 @font-face {
   font-family: "FontAwesome";
   src: url("../fonts/fontawesome-webfontba72.eot?v=4.0.3");
@@ -558,7 +555,7 @@
 .fa-bar-chart-o:before {
   content: "\f080";
 }
-.fa-twitter-square:before {
+.fa-naver-square:before {
   content: "\f081";
 }
 .fa-facebook-square:before {
@@ -628,7 +625,7 @@
 .fa-phone-square:before {
   content: "\f098";
 }
-.fa-twitter:before {
+.fa-naver:before {
   content: "\f099";
 }
 .fa-facebook:before {
