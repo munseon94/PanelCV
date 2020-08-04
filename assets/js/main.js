@@ -159,10 +159,11 @@ jQuery(document).ready(function($) {
     /* ---------------------------------------------------------------------- */
 
     // Needed variables
-    var $contactform = $('#contactform'),
-            $success = ' Your message has been sent. Thank you!';
-
-    $contactform.submit(function() {
+    var $contactform = $('#contactform');
+    var $success = ' Your message has been sent. Thank you!';
+    var response = '';
+	
+    $('#contactform').submit(function() {
         $.ajax({
             type: "POST",
             url: "php/contact.php",
