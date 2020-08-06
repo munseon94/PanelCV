@@ -62,14 +62,14 @@
 
                 <div class="contact-form">
                     <!--<h3 class="main-heading"><span>Let's keep in touch</span></h3>-->
-
-
                     <!--메일보내는거를 추가해야되는데, 오류가 나므로 일단 pass-->
-                        <!-- 메시지보내기 버튼 클릭하면 그냥 팝업창 뜨는걸로...-->
-                        <!-- 아니면 클릭할때, 페이지 따로 출력되서... 확인메시지 나오게 한뒤, 그 창에서 다시 설정.-->
+                    <!-- 메시지보내기 버튼 클릭하면 그냥 팝업창 뜨는걸로...-->
+                    <!-- 아니면 클릭할때, 페이지 따로 출력되서... 확인메시지 나오게 한뒤, 그 창에서 다시 설정.-->
                     <div id="contact-status"></div>
-
-                    <form action="" id="contactform"><!-- method="post"-->
+                <!--vscode에서는 메일이 보내지는데...!!!! 알아보니 github.io 페이지는 안보내진다고 한다!!!!-->
+                <!-- 이런...개고생했다...진작에 구글링을 했어야했어.. 그래서 알아본 바로는 "formspree" 요 사이트를 활용..!!-->
+                <!--        
+                    <form action="" id="contactform">
                         <p class="form-group" id="contact-name">
                             <label for="name">Your Name</label>
                             <input type="text" name="name" class="form-control name-contact" id="inputSuccess" placeholder="Name..." />
@@ -86,13 +86,42 @@
                         <input type="reset" name="reset" value="CLEAR" class="reset">
                             
                           
-                       <!--  <input type="submit" name="submit" value="SEND MESSAGE" class="submit" onclick="alert("message send success!!")"> -->
+                       <!--  <input type="submit" name="submit" value="SEND MESSAGE" class="submit" onclick="alert("message send success!!")"> 
                         
                         <section class="button-demo" style="display: inline-block;">
                             <button class="ladda-button submit send_email" name="submit" data-color="green" data-style="expand-left">SEND MESSAGE</button>
                         </section>  
+                                        
+                    </form>  -->
+                        
+             <!-- "formspree를 활용한 contact form 재생성 -->
+                    <form action="https://formspree.io/jenny2103@naver.com" method="POST">
+                         <label>
+    Your email:
+    <input type="text" name="_replyto">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
 
-                    </form>
+  <!-- your other form fields go here -->
+
+  <button type="submit">Send</button>
+</form>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
                 </div>
                 <!-- /Contact Form -->
             </div>
