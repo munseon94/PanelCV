@@ -69,6 +69,7 @@
                 <!--vscode에서는 메일이 보내지는데...!!!! 알아보니 github.io 페이지는 안보내진다고 한다!!!!-->
                 <!-- 이런...개고생했다...진작에 구글링을 했어야했어.. 그래서 알아본 바로는 "formspree" 요 사이트를 활용..!!-->
                 <!--        
+
                     <form action="" id="contactform">
                         <p class="form-group" id="contact-name">
                             <label for="name">Your Name</label>
@@ -95,32 +96,24 @@
                     </form>  -->
                         
              <!-- "formspree를 활용한 contact form 재생성 -->
-                    <form action="https://formspree.io/jenny2103@naver.com" method="POST">
-                         <label>
-    Your email:
-    <input type="text" name="_replyto">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
+                    <form action="https://formspree.io/jenny2103@naver.com" method="POST" id="contactform">
+                        <p class="form-group" id="contact-name">
+                            <label for="name">Your Name</label>                                  
+                            <input type="text" name="name" class="form-control name-contact" id="inputSuccess" placeholder="Name..." />
+                        </p>
+                        <p class="form-group" id="contact-email"> 
+                            <label for="email">Your Email</label>
+                            <input type="text" name="_replyto" class="form-control email-contact" id="inputSuccess" placeholder="Email..." />
+                        </p>
 
-  <!-- your other form fields go here -->
-
-  <button type="submit">Send</button>
-</form>
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+                        <p class="form-group" id="contact-message">
+                            <label for="message">Your Message</label>
+                            <textarea name="message" cols="88" rows="6" class="form-control message-contact" id="inputError" placeholder="Message..."></textarea>
+                        </p>
+                        <input type="reset" name="reset" value="CLEAR" class="reset">     
+                        <button type="submit">Send</button>
+                     </form>
+        
                         
                 </div>
                 <!-- /Contact Form -->
